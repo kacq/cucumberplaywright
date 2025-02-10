@@ -1,0 +1,29 @@
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Node.js
+node_modules/
+package-lock.json
+
+# TypeScript
+dist/
+out/
+*.tsbuildinfo
+
+# Cucumber
+reports/
+cucumber-report.json
+@rerun.txt
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.log
+
+# OS pliki
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1 @@
+npm test --BROWSER="firefox" --TAGS="@test"

@@ -1,10 +1,26 @@
 {
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test" : "cucumber-js",
+    "test:chrome": "npm test --BROWSER=\"chrome\"",
+    "test:firefox": "npm test --BROWSER=\"firefox\"",
+    "test:webkit": "npm test --BROWSER=\"webkit\"",
+    "posttest": "node generate_report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "devDependencies": {
-    "@cucumber/cucumber": "^11.2.0",
     "@playwright/test": "^1.50.1",
     "@types/node": "^22.13.1",
-    "playwright": "^1.50.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "cucumber-html-reporter": "^7.2.0"
   }
 }
